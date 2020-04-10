@@ -1,1 +1,8 @@
 install.packages("ggplot2")
+install.packages("reshape")
+install.packages("reshape2")
+install.packages("tidyverse")
+install.packages("argparse")
+install.packages("ggdendro")
+install.packages("ggpubr")
+install.packages("grid")
