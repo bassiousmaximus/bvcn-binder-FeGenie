@@ -5,3 +5,26 @@ Initially forked from [here](https://github.com/binder-examples/conda). Thank yo
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Arkadiy-Garber/bvcn-binder-FeGenie/master?urlpath=lab)
 
 Part of the [Bioinformatics Virtual Coordination Network](https://biovcnet.github.io/) :)
+
+
+
+## Walkthrough
+
+Enter the main FeGenie directory
+
+    cd FeGenie
+
+print the FeGenie help menu
+
+    FeGenie -h
+
+run FeGenie on test dataset
+
+    FeGenie -bin_dir test_dataset/ bin_ext fna -out fegenie_out
+
+Go into the output directory and check out the output files
+
+    cd fegenie_out
+    less FeGenie-geneSummary-clusters.csv
+
+
