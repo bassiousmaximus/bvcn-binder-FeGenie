@@ -20,11 +20,15 @@ print the FeGenie help menu
 
 run FeGenie on test dataset
 
-    FeGenie -bin_dir test_dataset/ bin_ext fna -out fegenie_out
+    FeGenie.py -bin_dir genomes/ -bin_ext fna -out fegenie_out
 
 Go into the output directory and check out the output files
 
     cd fegenie_out
     less FeGenie-geneSummary-clusters.csv
+
+run FeGenie on gene calls
+
+    FeGenie.py -bin_dir ORFs/ -bin_ext faa -out fegenie_out --orfs
 
 
