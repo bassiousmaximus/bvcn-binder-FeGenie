@@ -459,7 +459,7 @@ def main():
         test = open(bits)
 
     except FileNotFoundError:
-        os.system("which MagicLamp.py > mainDir.txt")
+        os.system("which FeGenie.py > mainDir.txt")
 
         file = open("mainDir.txt")
         for i in file:
