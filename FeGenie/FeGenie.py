@@ -1348,17 +1348,11 @@ def main():
                 blasthit = dmndblastDict[ls[1]][ls[2]]["target"]
                 e = dmndblastDict[ls[1]][ls[2]]["e"]
                 try:
-                    print(ls[0] + "," + ls[1] + "," + ls[2] + "," + ls[3] + "," + str(ls[4]) + "," + str(
-                        metaDict[ls[3].split(".")[0]]) + "," + str(counter) + "," + str(
-                        hemes) + "," + blasthit + "," + str(
-                        e) + "," + seq)
                     out.write(ls[0] + "," + ls[1] + "," + ls[2] + "," + ls[3] + "," + str(ls[4]) + "," + str(
                         metaDict[ls[3].split(".")[0]]) + "," + str(counter) + "," + str(
                         hemes) + "," + blasthit + "," + str(
                         e) + "," + seq + "\n")
                 except TypeError:
-                    print(ls[0] + "," + ls[1] + "," + ls[2] + "," + ls[3] + "," + ls[4] + "," + str(counter) + "," + str(
-                            hemes) + "," + blasthit + "," + str(e) + "," + seq)
                     out.write(ls[0] + "," + ls[1] + "," + ls[2] + "," + ls[3] + "," + ls[4] + "," + str(counter) + "," + str(
                             hemes) + "," + blasthit + "," + str(e) + "," + seq + "\n")
 
@@ -1921,7 +1915,6 @@ def main():
 
     for i in summary:
         if not re.search(r'#', i):
-            print(i.rstrip())
             out.write(i.rstrip() + "\n")
 
     out.close()
