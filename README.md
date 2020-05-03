@@ -33,5 +33,5 @@ run FeGenie on gene calls
 
 run FeGenie on gene calls, and use reference database (RefSeq sub-sample) for cross-validation
 
-    FeGenie.py -bin_dir ORFs/ -bin_ext faa -out fegenie_out --orfs -ref 
+    FeGenie.py -bin_dir ORFs/ -bin_ext faa -out fegenie_out --orfs -ref refseq_db/refseq_nr.sample.faa
 
